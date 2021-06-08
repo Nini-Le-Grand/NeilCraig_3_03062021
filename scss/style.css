@@ -14,7 +14,7 @@
 }
 
 body {
-  max-width: 720px;
+  max-width: 600px;
   margin: auto;
 }
 
@@ -281,10 +281,6 @@ header .localisation .equaliser {
 }
 
 .piedDePage__titre__image {
-  -webkit-filter: grayscale(50%);
-          filter: grayscale(50%);
-  background-color: blue;
-  border: 1px solid white;
   width: 120px;
 }
 
