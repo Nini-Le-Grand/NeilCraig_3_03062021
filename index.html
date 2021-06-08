@@ -7,16 +7,18 @@
     <script src="https://kit.fontawesome.com/7f7cd5e7f3.js" crossorigin="anonymous"></script>
     <title>OhMyFood</title>
 </head>
+
 <body>
+
     <header>
-        <div id="logo">
-            <a id="lienLogo" href="">
-                <img src="images/logo/ohmyfood.svg" alt="image logo">
+        <div class="logo">
+            <a class="logo__lien" href="">
+                <img src="images/logo/ohmyfood.svg" alt="logo ohmyfood">
             </a>
         </div>
 
         <div id="localisation">
-            <form>
+            <form get="" action="traitement.php">
                 <p>
                     <label>
                         <i class="fas fa-map-marker-alt"></i>
@@ -25,45 +27,190 @@
                 </p>
             </form>
         </div>
-
-        <div id="presentation">
-
-        </div>
-
-        <div id="explorer">
-
-        </div>
-
     </header>
 
-    <section id="fonctionnement">
-        <h2>Fonctionnement</h2>
-        <div id="vignettesFonctionnement">
-
-            <article class="">
-                <a class="lien" href="">
-
-                </a>
-            </article>
-
-            <article class="">
-                <a class="lien" href="">
-
-                </a>
-            </article>
-
-            <article class="">
-                <a class="lien" href="">
-
-                </a>
-            </article>
+    <section class="presentation">
+        <h1 class="presentation__titre">
+            Réservez le menu qui vous convient
+        </h1>
+        <p class="presentation__texte">
+            Découvrez des restaurants d'exeption séléctionnés par nos soins.
+        </p>
+        <div class="presentation__bouton">
+            <a class="presentation__bouton__lien" href="">
+                Explorer nos restaurants
+            </a>
         </div>
     </section>
 
-    <section id="restaurants">
-        
+    <section class="fonctionnement">
 
+        <h1 class="fonctionnement__titre">
+            Fonctionnement
+        </h1>
+
+        <article class="fonctionnement__block">
+            <a class="fonctionnement__block__lien" href="">
+                <div class="fonctionnement__block__lien__pastille">
+                    1
+                </div>
+                <div class="fonctionnement__block__lien__icone">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h2 class="fonctionnement__block__lien__texte">
+                    Choisissez un restaurant
+                </h2>
+            </a>
+        </article>
+
+        <article class="fonctionnement__block">
+            <a class="fonctionnement__block__lien" href="">
+                <div class="fonctionnement__block__lien__pastille">
+                    2
+                </div>
+                <div class="fonctionnement__block__lien__icone">
+                    <i class="fas fa-list-ul"></i>
+                </div>
+                <h2 class="fonctionnement__block__lien__texte">
+                    Composez votre menu
+                </h2>
+            </a>
+        </article>
+
+        <article class="fonctionnement__block">
+            <a class="fonctionnement__block__lien" href="">
+                <div class="fonctionnement__block__lien__pastille">
+                    3
+                </div>
+                <div class="fonctionnement__block__lien__icone">
+                    <i class="fas fa-store"></i>
+                </div>
+                <h2 class="fonctionnement__block__lien__texte">
+                    Dégustez au restaurant
+                </h2>
+            </a>
+        </article>
     </section>
+
+    <section class="restaurants">
+        <h1 class="restaurants__titre">
+            Restaurants
+        </h1>
+
+        <article class="restaurants__block">
+            <a class="restaurants__block__lien" href="">
+                <div class="restaurants__block__lien__photo">
+                    <img alt="" src="./images/restaurants/la_palette_du_gout.jpg"/>
+                    <div class="restaurants__block__lien__photo__statut">
+                        Nouveau
+                    </div>
+                </div>
+                <div class="restaurants__block__lien__texte">
+                    <h2 class="restaurants__block__lien__texte__restaurant">
+                        La palette du goût
+                    </h2>
+                    <p class="restaurants__block__lien__texte__localisation">
+                        Ménilmontant
+                    </p>
+                    <div class="restaurants__block__lien__texte__iconeCoeur">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </a>
+        </article>
+        
+        <article class="restaurants__block">
+            <a class="restaurants__block__lien" href="">
+                <div class="restaurants__block__lien__photo">
+                    <img alt="" src="images/restaurants/la_note_enchantee.jpg"/>
+                    <div class="restaurants__block__lien__photo__statut">
+                        Nouveau
+                    </div>
+                </div>
+                <div class="restaurants__block__lien__texte">
+                    <h2 class="restaurants__block__lien__texte__restaurant">
+                        La note enchantée
+                    </h2>
+                    <p class="restaurants__block__lien__texte__localisation">
+                        Charonne
+                    </p>
+                    <div class="restaurants__block__lien__texte__iconeCoeur">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </a>
+        </article>
+        
+        <article class="restaurants__block">
+            <a class="restaurants__block__lien" href="">
+                <div class="restaurants__block__lien__photo">
+                    <img alt="" src="images/restaurants/a_la_francaise.jpg"/>
+                </div>
+                <div class="restaurants__block__lien__texte">
+                    <h2 class="restaurants__block__lien__texte__restaurant">
+                        À la française
+                    </h2>
+                    <p class="restaurants__block__lien__texte__localisation">
+                        Cité Rouge
+                    </p>
+                    <div class="restaurants__block__lien__texte__iconeCoeur">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </a>
+        </article>
+        
+        <article class="restaurants__block">
+            <a class="restaurants__block__lien" href="">
+                <div class="restaurants__block__lien__photo">
+                    <img alt="" src="images/restaurants/le_delice_des_sens.jpg"/>
+                </div>
+                <div class="restaurants__block__lien__texte">
+                    <h2 class="restaurants__block__lien__texte__restaurant">
+                        Le délice des sens
+                    </h2>
+                    <p class="restaurants__block__lien__texte__localisation">
+                        Folie-Méricourt
+                    </p>
+                    <div class="restaurants__block__lien__texte__iconeCoeur">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </a>
+        </article>
+    </section>
+
+    <footer class="piedDePage">
+        <h1 class="piedDePage__titre">
+            <img alt="" src="images/logo/ohmyfood@2x.svg"/>
+        </h1>
+        <ul class="piedDePage__liste">
+            <li class="piedDePage__liste__element">
+                <a class="piedDePage__liste__element__lien" href="">
+                    <div class="piedDePage__liste__element__lien__icone">
+
+                    </div>
+                </a>
+            </li>
+            <li class="piedDePage__liste__element">
+                <a class="piedDePage__liste__element__lien" href="">
+                    <div class="piedDePage__liste__element__lien__icone">
+
+                    </div>>
+                </a>
+            </li>
+            <li class="piedDePage__liste__element">
+                <a class="piedDePage__liste__element__lien" href="">
+                    Mentions légales
+                </a>
+            </li>
+            <li class="piedDePage__liste__element">
+                <a class="piedDePage__liste__element__lien" href="">
+                    Contacts
+                </a>
+            </li>
+        </ul>
+    </footer>
     
 </body>
 </html>

@@ -1,0 +1,168 @@
+@import './variables';
+@import './placeholders';
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../font/roboto.ttf);
+}
+
+* {
+    font-family: 'Roboto' ,'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', serif;
+}
+
+body ::before ::after {
+    margin: 0;
+    padding: 0;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+
+    __bouton {
+        width: 60%;
+        height: 50px;
+        border-radius: 9999px;
+        background: linear-gradient( 175deg, $couleur-secondaire 10%, $couleur-primaire);
+
+        __lien {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.fonctionnement {
+    padding: 20px;
+
+    __block {
+        width: 100%;
+        height: 70px;
+        margin-left: 12px;
+        margin-bottom: 30px;
+        box-shadow: 0px 3px 9px rgb(206, 201, 201);
+        border-radius: 20px;
+        background-color: rgb(245, 243, 243);
+    
+        __lien {
+            display: flex;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: black;
+    
+            __pastille {
+                width: 24px;
+                height: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 9999px;
+                background-color: $couleur-primaire;
+                position: absolute;
+                left: -12px;
+            }
+    
+            __icone {
+                width: 15%;
+                font-size: 1.4em;
+                display: flex;
+                justify-content: right;
+            }
+    
+            __texte {
+                width: 85%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+
+
+.restaurants {
+    padding: 20px;
+
+    __block {
+        height: 250px;
+        margin: 15px 0px;
+        box-shadow: 0px 2px 4px 4px rgb(219, 219, 219);
+        border-radius: 20px;
+        overflow: hidden;
+    
+        __lien {
+            width: 100%;
+            text-decoration: none;
+            color: black;
+    
+            __photo {
+                height: 150px;
+    
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+    
+            __texte {
+                padding: 0px 20px;
+                width: 100%;
+                height: 80px;
+                position: relative;
+    
+                __restaurant {
+                    margin: 0;
+                    height: 60%;
+                    display: flex;
+                    align-items: center;
+                }
+                
+                __localisation {
+                    margin: 0;
+                    height: 40%;
+                }
+    
+                __iconeCoeur {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    font-size: 37px;
+                    border: 1px solid yellow;
+                    right: 15%;
+                    top: 30%;
+                }
+            }
+        }
+    }
+}
+
+.piedDePage {
+    background-color: black;
+
+    __liste {
+        list-style-type: none;
+
+        __element {
+
+            __lien {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
