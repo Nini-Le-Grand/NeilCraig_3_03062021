@@ -1,5 +1,19 @@
-.flexC {
+.flex {
     display: flex;
-    align-items: center;
+}
+
+.justc {
     justify-content: center;
+}
+
+.alignc {
+    align-items: center;
+}
+
+.textc {
+    text-align: center;
+}
+
+.column {
+    flex-direction: column;
 }

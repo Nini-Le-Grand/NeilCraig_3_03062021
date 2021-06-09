@@ -1,0 +1,107 @@
+.headerRestaurant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+
+    &__boutonRetour {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        height: 24px;
+        width: 24px;
+
+        &__lien {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    &__logo {
+        padding: 15px 0px;
+    }
+
+    .equaliser1 {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__photo {
+        height: 220px;
+        width: 100%;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.restaurant__menu {
+    margin-top: -40px;
+    border-radius: 40px 40px 0px 0px;
+    background-color: rgb(246, 246, 246);
+    padding: 20px;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 1;
+
+    .titre__restaurant {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .restaurant__menu__coeur {
+            height: 34px;
+            width: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+
+        }
+    }
+}
+
+.menu {
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    &__section {
+        font-weight: normal;
+
+        &__underline {
+            width: 60px;
+            border-top: 3px solid #99E2D0;
+        }
+
+    }
+}
+
+.plat {
+    margin-top: 20px;
+    border-radius: 17px;
+    box-shadow: 0px 2px 6px 6px rgb(230, 227, 227);
+
+    &__lien {
+        padding: 12px;
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        color: black;
+
+        &__enonce__nom {
+            font-weight: bold;
+        }
+
+        &__prix {
+            align-self: flex-end;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+    }
+}
