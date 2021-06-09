@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Robotobl';
+    src: url(../font/roboto/roboto-black.ttf);
+}
+
+@font-face {
+    font-family: 'Robotobo';
+    src: url(../font/roboto/roboto-bold.ttf);
+}
+
+@font-face {
+    font-family: 'Robotol';
+    src: url(../font/roboto/roboto-light.ttf);
+}
+
+@font-face {
+    font-family: 'Robotom';
+    src: url(../font/roboto/roboto-medium.ttf);
+}
+
+@font-face {
+    font-family: 'Robotor';
+    src: url(../font/roboto/roboto-regular.ttf);
+}
+
+@font-face {
+    font-family: 'Robotot';
+    src: url(../font/roboto/roboto-thin.ttf);
+}
+
+
+
+* {
+    font-family: 'Robotol' ,'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', serif;
+}
+
+h1, h2 {
+    font-family: 'Robotobl';
+}
+
+h3 {
+    font-family: 'Robotobo';
+}
