@@ -1,0 +1,55 @@
+//flex
+.flex {
+    display: flex;
+}
+
+.justc {
+    justify-content: center;
+}
+
+.justsb {
+    justify-content: space-between;
+}
+
+.alignc {
+    align-items: center;
+}
+
+.alignselffe {
+    align-self: flex-end;
+}
+
+.textc {
+    text-align: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+//position
+.rel {
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
+
+.pastilleP {
+    left: -12px;
+}
+
+.iconeP {
+    left: 9%;
+}
+
+.statutP {
+    top: 10%;
+    right: 5%;
+}
+
+.coeurP {
+    right: 40px;
+    top: 20px;
+}

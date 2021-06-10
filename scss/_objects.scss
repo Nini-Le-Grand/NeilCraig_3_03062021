@@ -1,0 +1,29 @@
+.lien {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+li {
+    list-style-type: none;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+.bouton {
+    width: 70%;
+    height: 50px;
+    border-radius: 9999px;
+}
+
+.photoA {
+    height: 150px;
+}

@@ -22,6 +22,10 @@
   font-family: "Robotot";
   src: url(../font/roboto/roboto-thin.ttf);
 }
+@font-face {
+  font-family: "Shrinkhand";
+  src: url(../font/shrinkhand/shrikhand-regular.ttf);
+}
 * {
   font-family: "Robotol", "Cambria", "Cochin", "Georgia", "Times", "Times New Roman", serif;
 }
@@ -34,6 +38,25 @@ h3 {
   font-family: "Robotobo";
 }
 
+.titre {
+  font-family: "Shrinkhand";
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.prix {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.iconeF {
+  font-size: 1.4em;
+}
+
+.coeurF {
+  font-size: 30px;
+}
+
 .flex {
   display: flex;
 }
@@ -42,8 +65,16 @@ h3 {
   justify-content: center;
 }
 
+.justsb {
+  justify-content: space-between;
+}
+
 .alignc {
   align-items: center;
+}
+
+.alignselffe {
+  align-self: flex-end;
 }
 
 .textc {
@@ -54,6 +85,96 @@ h3 {
   flex-direction: column;
 }
 
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+.pastilleP {
+  left: -12px;
+}
+
+.iconeP {
+  left: 9%;
+}
+
+.statutP {
+  top: 10%;
+  right: 5%;
+}
+
+.coeurP {
+  right: 40px;
+  top: 20px;
+}
+
+*, li, ::before, ::after {
+  margin: 0px;
+  padding: 0px;
+  border: 0;
+}
+
+.marginBlock {
+  margin: 20px 0px;
+  border-radius: 20px;
+}
+
+.marginTexte {
+  margin: 8px 20px;
+}
+
+.paddingSection {
+  padding: 0px 20px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.paddingHeader {
+  padding: 15px 0px;
+}
+
+.paddingStatut {
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.blockF {
+  height: 70px;
+  margin-left: 12px;
+}
+
+.blockR {
+  overflow: hidden;
+}
+
+.pastilleS {
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+}
+
+.iconeS {
+  width: 24px;
+}
+
+.mapS {
+  width: 40px;
+}
+
+.coeurS {
+  width: 40px;
+  height: 40px;
+}
+
+.lien {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
 img {
   height: 100%;
   width: 100%;
@@ -61,10 +182,22 @@ img {
      object-fit: cover;
 }
 
-.lien {
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
+li {
+  list-style-type: none;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+.bouton {
+  width: 70%;
+  height: 50px;
+  border-radius: 9999px;
+}
+
+.photoA {
+  height: 150px;
 }
 
 .cblack {
@@ -119,75 +252,46 @@ img {
   box-shadow: 0px 3px 9px #cec9c9;
 }
 
-.headerRestaurant {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  background-color: white;
+.shade:hover {
+  box-shadow: 0px 3px 9px #a1a0a0;
 }
+
+.blockF:hover {
+  background-color: #FF79DA;
+}
+
+.blockF:hover .iconeH {
+  color: #9356DC;
+}
+
 .headerRestaurant__boutonRetour {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 22px;
   height: 24px;
   width: 24px;
-}
-.headerRestaurant__boutonRetour__lien {
-  text-decoration: none;
-  color: black;
+  left: 30px;
 }
 .headerRestaurant__logo {
   padding: 15px 0px;
 }
-.headerRestaurant .equaliser1 {
-  width: 24px;
-  height: 24px;
-}
-.headerRestaurant__photo {
-  height: 220px;
-  width: 100%;
-}
-.headerRestaurant__photo img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 
-.restaurant__menu {
+.restaurantMenu {
   margin-top: -40px;
   border-radius: 40px 40px 0px 0px;
-  background-color: #f6f6f6;
   padding: 20px;
   padding-bottom: 50px;
-  position: relative;
-  z-index: 1;
 }
-.restaurant__menu .titre__restaurant {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.restaurant__menu .titre__restaurant .restaurant__menu__coeur {
+.restaurantMenu__header__coeur {
+  right: 30px;
   height: 34px;
   width: 34px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 24px;
 }
 
-.menu {
+.menuCard {
   margin-top: 20px;
   margin-bottom: 50px;
 }
-.menu__section {
-  font-weight: normal;
-}
-.menu__section__underline {
+.menuCard__section__underline {
   width: 60px;
   border-top: 3px solid #99E2D0;
 }
@@ -195,146 +299,5 @@ img {
 .plat {
   margin-top: 20px;
   border-radius: 17px;
-  box-shadow: 0px 2px 6px 6px #e6e3e3;
-}
-.plat__lien {
   padding: 12px;
-  display: flex;
-  justify-content: space-between;
-  text-decoration: none;
-  color: black;
-}
-.plat__lien__enonce__nom {
-  font-weight: bold;
-}
-.plat__lien__prix {
-  align-self: flex-end;
-  font-weight: bold;
-  font-size: 0.9em;
-}
-
-*, ::before, ::after {
-  margin: 0px;
-  padding: 0px;
-  border: 0;
-}
-
-.logo {
-  padding: 15px 20px;
-}
-
-.localisation {
-  padding: 15px 0px;
-}
-.localisation i {
-  width: 40px;
-}
-
-.presentation {
-  padding: 45px 35px;
-}
-.presentation__titre {
-  padding-bottom: 15px;
-}
-.presentation__texte {
-  padding-bottom: 15px;
-}
-
-.bouton {
-  width: 70%;
-  height: 50px;
-  border-radius: 9999px;
-  margin: auto;
-  margin-top: 15px;
-  margin-bottom: 30px;
-}
-
-.fonctionnement {
-  padding: 45px 35px;
-}
-.fonctionnement__titre {
-  margin-bottom: 20px;
-}
-
-.blockF {
-  height: 70px;
-  margin-bottom: 30px;
-  margin-left: 12px;
-  border-radius: 20px;
-  position: relative;
-}
-.blockF:hover .blockF__icone {
-  color: #9356DC;
-}
-.blockF__pastille {
-  width: 24px;
-  height: 24px;
-  border-radius: 9999px;
-  position: absolute;
-  left: -12px;
-}
-.blockF__icone {
-  position: absolute;
-  left: 9%;
-  width: 24px;
-  font-size: 1.4em;
-}
-
-.restaurants {
-  padding: 45px 35px;
-}
-.restaurants .blockR {
-  height: 250px;
-  margin: 30px 0px;
-  border-radius: 20px;
-  overflow: hidden;
-}
-.restaurants .blockR__photo {
-  height: 150px;
-  position: relative;
-}
-.restaurants .blockR__photo__statut {
-  padding: 8px 15px;
-  position: absolute;
-  top: 10%;
-  right: 5%;
-  border-radius: 5px;
-}
-.restaurants .blockR__texte {
-  padding: 20px 20px;
-  width: 100%;
-  height: 80px;
-  position: relative;
-}
-.restaurants .blockR__texte__localisation {
-  padding-top: 5px;
-}
-.restaurants .blockR__texte__coeur {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  font-size: 37px;
-  border: 1px solid yellow;
-  right: 15%;
-  top: 30%;
-}
-
-.piedDePage {
-  padding: 15px 35px;
-}
-
-.liste {
-  padding-bottom: 30px;
-  list-style-type: none;
-  padding: 0;
-}
-.liste__element {
-  margin: 8px 0px;
-}
-.liste__element a {
-  display: flex;
-  align-items: center;
-}
-.liste__element__icone {
-  width: 24px;
 }/*# sourceMappingURL=main.css.map */

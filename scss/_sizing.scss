@@ -1,0 +1,61 @@
+*, li, ::before, ::after {
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+}
+
+//margins
+.marginBlock {
+    margin: 20px 0px;
+    border-radius: 20px;
+}
+
+.marginTexte {
+    margin: 8px 20px;
+}
+
+//paddings
+.paddingSection {
+    padding: 0px 20px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.paddingHeader {
+    padding: 15px 0px;
+}
+
+.paddingStatut {
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+//block
+.blockF {
+    height: 70px;
+    margin-left: 12px;
+}
+
+.blockR {
+    overflow: hidden;
+}
+
+//icones
+.pastilleS {
+    width: 24px;
+    height: 24px;
+    border-radius: 9999px;
+}
+
+.iconeS {
+    width: 24px;
+}
+
+.mapS {
+    width: 40px;
+}
+
+.coeurS {
+    width: 40px;
+    height: 40px;
+}
