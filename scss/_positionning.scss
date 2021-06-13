@@ -51,5 +51,44 @@
 
 .coeurP {
     right: 40px;
-    top: 20px;
+    top: 14px;
+}
+
+.arrowP {
+    left: 30px;
+}
+
+.menuP {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -40px;
+}
+
+.cardP {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.platP {
+    margin-top: 20px;
+    border-radius: 17px;
+    padding: 12px;
+}
+
+.coeurMP {
+    right: 30px;
+}
+
+//media queries
+@media all and (min-width:850px) {
+    .desktop {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .blockR {
+        width: 48%;
+    }
 }
