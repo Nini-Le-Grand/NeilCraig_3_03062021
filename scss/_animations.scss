@@ -1,0 +1,45 @@
+
+//coeur
+.rbox__coeur--full {
+    font-size: $fontsize-coeur;
+    opacity: 0;
+    transform: scale(0);
+    transition-duration: 1s;
+    
+}
+
+.rbox__coeur:hover .rbox__coeur--full {
+    opacity: (1);
+    transform: scale(1);
+}
+
+.rbox__coeur:hover .rbox__coeur--empty {
+    opacity: 0;
+    transition-duration: 0.7s;
+}
+
+//selection
+.plat:hover .plat__textbox {
+    width: calc(100% - 135px);
+    transition-duration: 1s;
+}
+
+.plat:hover .plat__prix {
+    transform: translateX(-60px);
+    transition-duration: 1s;
+}
+
+.plat:hover .plat__selection {
+    transform: translateX(-60px);
+    transition-duration: 1s;
+}
+
+.checkbox {
+    transform: scale(0.5) rotate(280deg);
+}
+
+.plat:hover .checkbox {
+    transform: scale(1.6) rotate(0deg);
+    transition-duration: 0.7s;
+    transition-delay: 0.3s;
+}

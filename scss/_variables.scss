@@ -1,0 +1,53 @@
+//Couleurs
+$couleur-primaire: #9356DC;
+$couleur-primaire-hover: #f5edff;
+$couleur-secondaire: #FF79DA;
+$couleur-secondaire-hover: #ffa1e4;
+$couleur-tertiaire: #99E2D0;
+$couleur-tertiaire-fonce: #008766;
+$couleur-footer: #353535;
+$couleur-section: #eaeaea;
+$couleur-block: #f5f3f3;
+$couleur-shade: 0px 3px 9px #cec9c9;
+$couleur-shade-hover: 0px 3px 9px #a1a0a0;
+$couleur-bouton: linear-gradient( 175deg, $couleur-secondaire 10%, $couleur-primaire);
+$couleur-bouton-hover: linear-gradient( 175deg, $couleur-secondaire-hover 10%, $couleur-primaire);
+$couleur-underline: 3px solid #99E2D0;
+
+//FontSize
+$fontsize-titre-footer: 20px;
+$fontsize-titre-restaurant: 35px;
+$fontsize-prix: 0.9em;
+$fontsize-icone: 1.4em;
+$fontsize-coeur: 30px;
+
+//Sizing
+$full: 100%;
+$max-width: 850px;
+$height-box-fonctionnement: 70px;
+$width-bouton: 70%;
+$height-bouton: 50px;
+$height-photo-index: 150px;
+$height-photo-restaurant: 350px;
+$width-underline: 60px;
+$size-box-coeur: 40px;
+$size-box-map: 40px;
+$size-box-icone: 24px;
+$size-box-pastille: 24px;
+
+//Radius
+$radius-cercle: 9999px;
+$radius-box-plat: 17px;
+$radius-section-menu: 40px 40px 0px 0px;
+$radius-box: 20px;
+$radius-box-statut: 5px;
+
+//Positions
+$position-left-pastille: -12px;
+$position-left-icone: 9%;
+$position-top-statut: 10%;
+$position-right-statut: 5%;
+$position-top-coeur: 14px;
+$position-right-icoeur: 40px;
+$position-left-arrow: 30px;
+$position-right-mcoeur: 30px;

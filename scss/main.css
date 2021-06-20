@@ -26,43 +26,6 @@
   font-family: "Shrinkhand";
   src: url(../font/shrinkhand/shrikhand-regular.ttf);
 }
-* {
-  font-family: "Robotol", "Cambria", "Cochin", "Georgia", "Times", "Times New Roman", serif;
-}
-
-h1, h2 {
-  font-family: "Robotobl";
-}
-
-h3 {
-  font-family: "Robotobo";
-}
-
-.titre {
-  font-family: "Shrinkhand";
-  font-size: 20px;
-  font-weight: normal;
-}
-
-.titreR {
-  font-family: "Shrinkhand";
-  font-size: 40px;
-  font-weight: normal;
-}
-
-.prix {
-  font-weight: bold;
-  font-size: 0.9em;
-}
-
-.iconeF {
-  font-size: 1.4em;
-}
-
-.coeurF {
-  font-size: 30px;
-}
-
 .flex {
   display: flex;
 }
@@ -77,10 +40,6 @@ h3 {
 
 .alignc {
   align-items: center;
-}
-
-.alignselffe {
-  align-self: flex-end;
 }
 
 .textc {
@@ -99,191 +58,19 @@ h3 {
   position: absolute;
 }
 
-.pastilleP {
-  left: -12px;
-}
-
-.iconeP {
-  left: 9%;
-}
-
-.statutP {
-  top: 10%;
-  right: 5%;
-}
-
-.coeurP {
-  right: 40px;
-  top: 14px;
-}
-
-.arrowP {
-  left: 30px;
-}
-
-.menuP {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -40px;
-}
-
-.cardP {
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-
-.platP {
-  margin-top: 20px;
-  border-radius: 17px;
-  padding: 12px;
-}
-
-.coeurMP {
-  right: 30px;
-}
-
-@media all and (min-width: 850px) {
-  .desktop {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .blockR {
-    width: 48%;
-  }
-}
-*, li, ::before, ::after {
-  margin: 0px;
-  padding: 0px;
-  border: 0;
-}
-
-.marginBlock {
-  margin: 20px 0px;
-  border-radius: 20px;
-}
-
-.marginTexte {
-  margin: 8px 20px;
-}
-
-.paddingSection {
-  padding: 0px 20px;
-  padding-top: 25px;
-  padding-bottom: 50px;
-}
-
-.paddingHeader {
-  padding: 15px 0px;
-}
-
-.paddingStatut {
-  padding: 10px 15px;
-  border-radius: 5px;
-}
-
-.mwc {
-  max-width: 850px;
-  margin: auto;
-}
-
-.blockF {
-  height: 70px;
-  padding-left: 12px;
-}
-
-.blockR {
-  overflow: hidden;
-}
-
-.blockM {
-  border-radius: 40px 40px 0px 0px;
-  padding: 40px;
-  padding-bottom: 50px;
-  max-width: 850px;
-}
-
-.centerF {
-  max-width: 850px;
-  margin: auto;
-}
-
-.pastilleS {
-  width: 24px;
-  height: 24px;
-  border-radius: 9999px;
-}
-
-.iconeS {
-  width: 24px;
-}
-
-.mapS {
-  width: 40px;
-}
-
-.coeurS {
-  width: 40px;
-  height: 40px;
-}
-
-.photoR {
-  width: 100%;
-  max-height: 400px;
-}
-
-.lien {
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-}
-
-img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-li {
-  list-style-type: none;
-}
-
-li:hover {
-  text-decoration: underline;
-}
-
-.bouton {
-  width: 70%;
-  height: 50px;
-  border-radius: 9999px;
-  margin: 15px auto;
-}
-
-.photoA {
-  height: 150px;
-}
-
-.underline {
-  width: 60px;
-  border-top: 3px solid #99E2D0;
-}
-
-.cblack {
+.cdark {
   color: black;
 }
 
-.cwhite {
+.clight {
   color: white;
 }
 
-.cpurple {
+.cprim {
   color: #9356DC;
 }
 
-.cgreen {
+.cter {
   color: #008766;
 }
 
@@ -303,20 +90,23 @@ li:hover {
   background-color: #99E2D0;
 }
 
-.bcloud {
+.bblock {
   background-color: #f5f3f3;
 }
 
-.bgrey {
+.bsection {
   background-color: #eaeaea;
 }
 
-.bdark {
+.bfooter {
   background-color: #353535;
 }
 
 .gradient {
   background: linear-gradient(175deg, #FF79DA 10%, #9356DC);
+}
+.gradient:hover {
+  background: linear-gradient(175deg, #ffa1e4 10%, #9356DC);
 }
 
 .shade {
@@ -327,10 +117,284 @@ li:hover {
   box-shadow: 0px 3px 9px #a1a0a0;
 }
 
-.blockF:hover {
+.fbox:hover {
   background-color: #f5edff;
 }
 
-.blockF:hover .iconeH {
+.fbox:hover .fbox__icone {
   color: #9356DC;
+}
+
+.rbox__coeur--full {
+  font-size: 30px;
+  opacity: 0;
+  transform: scale(0);
+  transition-duration: 1s;
+}
+
+.rbox__coeur:hover .rbox__coeur--full {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.rbox__coeur:hover .rbox__coeur--empty {
+  opacity: 0;
+  transition-duration: 0.7s;
+}
+
+.plat:hover .plat__textbox {
+  width: calc(100% - 135px);
+  transition-duration: 1s;
+}
+
+.plat:hover .plat__prix {
+  transform: translateX(-60px);
+  transition-duration: 1s;
+}
+
+.plat:hover .plat__selection {
+  transform: translateX(-60px);
+  transition-duration: 1s;
+}
+
+.checkbox {
+  transform: scale(0.5) rotate(280deg);
+}
+
+.plat:hover .checkbox {
+  transform: scale(1.6) rotate(0deg);
+  transition-duration: 0.7s;
+  transition-delay: 0.3s;
+}
+
+.arrow {
+  left: 30px;
+  font-size: 1.4em;
+}
+
+.photoM {
+  width: 100%;
+  max-height: 350px;
+}
+
+.menu {
+  margin: auto;
+  margin-top: -60px;
+  max-width: 850px;
+  border-radius: 40px 40px 0px 0px;
+}
+.menu__titre {
+  font-family: "Shrinkhand";
+  font-size: 35px;
+  font-weight: normal;
+}
+.menu__coeur {
+  right: 30px;
+  font-size: 30px;
+}
+
+.card {
+  margin: 20px 0px 50px 0px;
+}
+
+.plat {
+  margin-top: 20px;
+  border-radius: 17px;
+  height: 70px;
+  overflow: hidden;
+}
+.plat__textbox {
+  padding: 12px 0px 12px 12px;
+  width: calc(100% - 75px);
+  overflow: hidden;
+  white-space: nowrap;
+}
+.plat__textbox__nom {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.plat__textbox__description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.plat__prix {
+  width: 60px;
+  height: 80%;
+  align-items: flex-end;
+  font-weight: bold;
+  font-size: 0.9em;
+  right: 0;
+}
+.plat__selection {
+  width: 60px;
+  height: 100%;
+  background: #99E2D0;
+  right: -60px;
+}
+
+* {
+  font-family: "Robotol", "Cambria", "Cochin", "Georgia", "Times", "Times New Roman", serif;
+}
+
+*, li, ::before, ::after {
+  margin: 0px;
+  padding: 0px;
+  border: 0;
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-family: "Robotobl";
+}
+
+h3 {
+  font-family: "Robotobo";
+}
+
+.prix {
+  font-family: "Robotobo";
+}
+
+.center {
+  max-width: 850px;
+  margin: auto;
+  padding: 30px 30px 50px 30px;
+}
+
+.lien {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bouton {
+  width: 70%;
+  height: 50px;
+  border-radius: 9999px;
+  margin: 15px auto;
+}
+
+.underline {
+  width: 60px;
+  border-top: 3px solid #99E2D0;
+}
+
+.logo, .localisation {
+  padding: 15px 0px;
+}
+
+.localisation__icone {
+  font-size: 1.4em;
+  width: 40px;
+}
+
+.presentation__titre {
+  margin-bottom: 15px;
+}
+.presentation__texte {
+  margin-bottom: 15px;
+}
+
+.fonctionnement__titre {
+  margin-bottom: 15px;
+}
+
+.fbox {
+  margin: 20px 0px;
+  border-radius: 20px;
+  height: 70px;
+  margin-left: 12px;
+}
+.fbox__pastille {
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+  left: -12px;
+}
+.fbox__icone {
+  width: 24px;
+  left: 9%;
+  font-size: 1.4em;
+}
+
+.restaurants__titre {
+  margin-bottom: 15px;
+}
+
+.rbox {
+  margin: 20px 0px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.rbox__photo {
+  height: 150px;
+}
+.rbox__statut {
+  font-family: "Robotobo";
+  padding: 10px 15px;
+  border-radius: 5px;
+  top: 10%;
+  right: 5%;
+}
+.rbox__nom {
+  margin: 8px 20px;
+}
+.rbox__lieu {
+  margin: 8px 20px;
+}
+.rbox__coeur {
+  right: 40px;
+  top: 14px;
+  font-size: 30px;
+}
+.rbox__coeur--empty {
+  top: 50%;
+  left: 50%;
+}
+.rbox__coeur--full {
+  top: 50%;
+  left: 50%;
+  background: linear-gradient(175deg, #FF79DA 10%, #9356DC);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.footer__titre {
+  font-family: "Shrinkhand";
+  font-size: 20px;
+  font-weight: normal;
+}
+.footer__liste {
+  list-style-type: none;
+}
+.footer__liste__icone {
+  width: 24px;
+}
+.footer__liste a {
+  margin: 4px 0px;
+}
+.footer__liste a:hover {
+  text-decoration: underline;
+}
+
+@media all and (min-width: 850px) {
+  .desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 850px;
+    margin: auto;
+  }
+
+  .rbox {
+    width: 48%;
+  }
 }/*# sourceMappingURL=main.css.map */

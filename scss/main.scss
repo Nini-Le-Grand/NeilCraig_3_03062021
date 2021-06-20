@@ -1,5 +1,206 @@
+@import './variables';
 @import './fonts';
-@import './positionning';
-@import './sizing';
-@import './objects';
-@import './color';
+@import './framework';
+@import './colors';
+@import './animations';
+@import './restaurants';
+
+
+//setup
+* {
+    font-family: 'Robotol' ,'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', serif;
+}
+
+*, li, ::before, ::after {
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-family: 'Robotobl';
+}
+
+h3 {
+    font-family: 'Robotobo';
+}
+
+.prix {
+    font-family: 'Robotobo';
+}
+
+.center {
+    max-width: $max-width;
+    margin: auto;
+    padding: 30px 30px 50px 30px;
+}
+
+.lien {
+    width: $full;
+    height: $full;
+}
+
+img {
+    height: $full;
+    width: $full;
+    object-fit: cover;
+}
+
+.bouton {
+    width: $width-bouton;
+    height: $height-bouton;
+    border-radius: $radius-cercle;
+    margin: 15px auto;
+}
+
+.underline {
+    width: $width-underline;
+    border-top: $couleur-underline;
+}
+
+
+//header
+.logo, .localisation {
+    padding: 15px 0px;
+}
+
+.localisation {
+    &__icone {
+        font-size: $fontsize-icone;
+        width: $size-box-map;
+    }
+}
+
+
+//section
+.presentation {
+    &__titre {
+        margin-bottom: 15px;
+    }
+
+    &__texte {
+        margin-bottom: 15px;
+    }
+}
+
+//section
+.fonctionnement {
+    &__titre {
+        margin-bottom: 15px;
+    }
+}
+
+.fbox {
+    margin: 20px 0px;
+    border-radius: $radius-box;
+    height: $height-box-fonctionnement;
+    margin-left: 12px;
+
+    &__pastille {
+        width: $size-box-pastille;
+        height: $size-box-pastille;
+        border-radius: $radius-cercle;
+        left: $position-left-pastille;
+        
+    }
+
+    &__icone {
+        width: $size-box-icone;
+        left: $position-left-icone;
+        font-size: $fontsize-icone;
+    }
+}
+
+//section
+.restaurants {
+    &__titre {
+        margin-bottom: 15px;
+    }
+}
+
+.rbox {
+    margin: 20px 0px;
+    border-radius: $radius-box;
+    overflow: hidden;
+
+    &__photo {
+        height: $height-photo-index;
+    }
+
+    &__statut {
+        font-family: 'Robotobo';
+        padding: 10px 15px;
+        border-radius: $radius-box-statut;
+        top: $position-top-statut;
+        right: $position-right-statut;
+    }
+
+    &__nom {
+        margin: 8px 20px;
+    }
+
+    &__lieu {
+        margin: 8px 20px;
+    }
+
+    &__coeur {
+        right: $position-right-icoeur;
+        top: $position-top-coeur;
+        font-size: $fontsize-coeur;
+
+        &--empty {
+            top: 50%;
+            left: 50%;
+        }
+
+        &--full {
+            top: 50%;
+            left: 50%;
+            background: $couleur-bouton;
+            background-clip: text;
+            color: transparent;
+        }
+    }
+}
+
+//footer
+.footer {
+    &__titre {
+    font-family: 'Shrinkhand';
+    font-size: $fontsize-titre-footer;
+    font-weight:normal;
+    }
+
+    &__liste {
+        list-style-type: none;
+
+        &__icone {
+            width: $size-box-icone;
+        }
+
+        a {
+            margin: 4px 0px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+//media queries
+@media all and (min-width:$max-width) {
+    .desktop {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: $max-width;
+        margin: auto;
+    }
+
+    .rbox {
+        width: 48%;
+    }
+}

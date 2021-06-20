@@ -1,0 +1,72 @@
+//colors
+.cdark {
+    color: black;
+}
+
+.clight {
+    color: white;
+}
+
+.cprim {
+    color: $couleur-primaire;
+}
+
+.cter {
+    color: $couleur-tertiaire-fonce;
+}
+
+//background colors
+.bwhite {
+    background-color: white;
+}
+
+.bprim {
+    background-color: $couleur-primaire;
+}
+
+.bsec {
+    background-color: $couleur-secondaire;
+}
+
+.bter {
+    background-color: $couleur-tertiaire;
+}
+
+.bblock {
+    background-color: $couleur-block;
+}
+
+.bsection {
+    background-color: $couleur-section;
+}
+
+.bfooter {
+    background-color: $couleur-footer;
+}
+
+//gradients
+.gradient {
+    background: $couleur-bouton;
+
+    &:hover {
+        background: $couleur-bouton-hover;
+    }
+}
+
+//box-shadows
+.shade {
+    box-shadow: $couleur-shade;
+}
+
+//hovers
+.shade:hover {
+    box-shadow: $couleur-shade-hover;
+}
+    
+.fbox:hover {
+    background-color: $couleur-primaire-hover;
+}
+
+.fbox:hover .fbox__icone {
+    color: $couleur-primaire;
+}

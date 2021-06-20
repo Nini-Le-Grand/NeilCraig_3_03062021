@@ -1,0 +1,33 @@
+//flex
+.flex {
+    display: flex;
+}
+
+.justc {
+    justify-content: center;
+}
+
+.justsb {
+    justify-content: space-between;
+}
+
+.alignc {
+    align-items: center;
+}
+
+.textc {
+    text-align: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+//position
+.rel {
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
