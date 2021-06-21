@@ -1,7 +1,7 @@
 //loader
 .loader {
     opacity: 0;
-    animation: show 4000ms linear forwards;
+    animation: show 3000ms linear forwards;
 }
 
 @keyframes show {
@@ -21,12 +21,12 @@
     position: absolute;
     display: flex;
     width: 100%;
-    height: 870px;
+    height: 100vh;
     align-items: center;
     justify-content: center;
     background: rgb(66, 65, 65);
     opacity: 1;
-    animation: load 4000ms linear forwards;
+    animation: load 3000ms linear forwards;
 }
 
 @keyframes load {
@@ -179,14 +179,21 @@
 .a2 {
     opacity: 0;
     animation: appear 1100ms linear;
-    animation-delay: 0.15s;
+    animation-delay: 150ms;
     animation-fill-mode: forwards;
 }
 
 .a3 {
     opacity: 0;
     animation: appear 1100ms linear;
-    animation-delay: 0.3s;
+    animation-delay: 300ms;
+    animation-fill-mode: forwards;
+}
+
+.a4 {
+    opacity: 0;
+    animation: appear 1100ms linear;
+    animation-delay: 450ms;
     animation-fill-mode: forwards;
 }
 

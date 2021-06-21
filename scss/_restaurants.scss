@@ -18,6 +18,7 @@
         font-family: 'Shrinkhand';
         font-size: $fontsize-titre-restaurant;
         font-weight:normal;
+        margin-right: 40px;
     }
 
     &__coeur {
@@ -28,6 +29,7 @@
 
 .card {
     margin: 20px 0px 50px 0px;
+    padding: 10px;
     overflow: hidden;
 }
 
@@ -58,7 +60,7 @@
         width: 60px;
         height: 80%;
         align-items: flex-end;
-        font-weight:bold;
+        font-family: 'Robotobo';
         font-size: $fontsize-prix;
         right: 0;
     }
