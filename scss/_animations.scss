@@ -92,7 +92,7 @@
     display: flex;
     height: 35px;
     width: 35px;
-    background-color: rgb(133, 19, 133);
+    background-color: $couleur-primaire;
     border-radius: 9999px;
     animation: bounce 2200ms ease-in-out infinite;
 }
@@ -100,7 +100,7 @@
 .ballon2 {
     height: 30px;
     width: 30px;
-    background-color: violet;
+    background-color: $couleur-secondaire;
     border-radius: 9999px;
     animation: bounce 2200ms ease-in-out 400ms infinite;
 }
@@ -108,7 +108,7 @@
 .ballon3 {
     height: 30px;
     width: 30px;
-    background-color: rgb(128, 246, 250);
+    background-color: $couleur-tertiaire;
     border-radius: 9999px;
     animation: bounce 2200ms ease-in-out 800ms infinite;
 }
