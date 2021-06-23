@@ -1,20 +1,6 @@
-//loader
-.loader {
+.load {
     opacity: 0;
     animation: show 3000ms linear forwards;
-}
-
-@keyframes show {
-    0% {
-        opacity: 0%;
-    }
-
-    90% {
-        opacity: 0%;
-    }
-    100% {
-        opacity: 100%;
-    }
 }
 
 .chargement {
@@ -29,21 +15,8 @@
     animation: load 3000ms linear forwards;
 }
 
-@keyframes load {
-    0% {
-        opacity: 100%;
-    }
-    99% {
-        opacity: 100%;
-    }
-    100% {
-        opacity: 0%;
-    }
-}
-
 .omf {
     width: 200px;
-    
     font-size: 35px;
     margin: auto;
     color: white;
@@ -63,22 +36,6 @@
     transform-origin: left;
 }
 
-
-@keyframes pump {
-    0% {
-        transform: scale(1);
-    }
-    10% {
-        transform: scale(1);
-    }
-    28% {
-        transform: scale(1.5);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
-
 .ballons {
     display: flex;
     align-items: flex-end;
@@ -90,8 +47,8 @@
 
 .ballon1 {
     display: flex;
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     background-color: $couleur-primaire;
     border-radius: 9999px;
     animation: bounce 2200ms ease-in-out infinite;
@@ -113,32 +70,44 @@
     animation: bounce 2200ms ease-in-out 800ms infinite;
 }
 
-@keyframes bounce {
-    
-        0%   { transform: scale(1,1)      translateY(0); }
-        10%  { transform: scale(1.1,.9)   translateY(0); }
-        30%  { transform: scale(.9,1.1)   translateY(-60px); }
-        50%  { transform: scale(1.05,.95) translateY(0); }
-        57%  { transform: scale(1,1)      translateY(-7px); }
-        64%  { transform: scale(1,1)      translateY(0); }
-        100% { transform: scale(1,1)      translateY(0); }
-}
-
 //coeur
-.rbox__coeur--full {
-    font-size: $fontsize-coeur;
-    opacity: 0;
-    transform: scale(0);
-    transition-duration: 1s;
-    
+
+.coeuri {
+    right: $position-right-coeuri;
+    top: $position-top-coeuri;
 }
 
-.rbox__coeur:hover .rbox__coeur--full {
+.coeurm {
+    top: $position-top-coeurm;
+    right: $position-right-coeurm;
+}
+
+.coeur {
+    font-size: $fontsize-coeur;
+
+    &--empty {
+        top: 50%;
+        left: 50%;
+    }
+    
+    &--full {
+        top: 50%;
+        left: 50%;
+        background: $couleur-bouton;
+        background-clip: text;
+        color: transparent;
+        opacity: 0;
+        transform: scale(0);
+        transition-duration: 1s;
+    }
+}
+
+.coeur:hover .coeur--full {
     opacity: (1);
     transform: scale(1);
 }
 
-.rbox__coeur:hover .rbox__coeur--empty {
+.coeur:hover .coeur--empty {
     opacity: 0;
     transition-duration: 0.7s;
 }
@@ -196,34 +165,3 @@
     animation-delay: 450ms;
     animation-fill-mode: forwards;
 }
-
-@keyframes appear {
-    0% {
-        opacity: 0%;
-        transform: translateY(200px);
-    }
-
-    60% {
-        opacity: 30%;
-        transform: translateY(-20px);
-    }
-
-    70% {
-        transform: translateY(10px);
-    }
-
-    80% {
-        transform: translateY(-5px);
-    }
-
-    90% {
-        transform: translateY(5px);
-    }
-
-    100% {
-        opacity: 100%;
-        transform: translateY(0px);
-    }
-}
-
-

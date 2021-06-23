@@ -30,21 +30,21 @@
             </div>
         </div>
     </div>
-    <div class="page loader">
+
+    <div class="page load">
         <header class="bsection">
             <div class="logo flex justc alignc bwhite shade">
                 <a href="">
                     <img src="images/logo/ohmyfood.svg" alt="logo ohmyfood">
                 </a>
             </div>
-            <div class="localisation flex justc alignc">
-                <div class="localisation__icone">
-                    <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <h3 class="localisation__texte">
-                    Paris, Belleville
-                </h3>
-            </div>
+
+            <form method="get" action="traitement.php" class="localisations flex justc alignc">
+                    <label id="labelMaker" for="locate" class="localisations__marker">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </label>
+                    <input type="search" id="locate" class="localisations__search" name="searchLocalisation" placeholder="Paris, Belleville" size="15">
+            </form>
         </header>
     
         <section class="presentation flex textc bblock">
@@ -79,7 +79,7 @@
                         <div class="fbox__icone abs">
                             <i class="fas fa-mobile-alt"></i>
                         </div>
-                        <h3>
+                        <h3 class="fbox__texte">
                             Choisissez un restaurant
                         </h3>
                     </a>
@@ -93,7 +93,7 @@
                         <div class="fbox__icone abs">
                             <i class="fas fa-list-ul"></i>
                         </div>
-                        <h3>
+                        <h3 class="fbox__texte">
                             Composez votre menu
                         </h3>
                     </a>
@@ -107,7 +107,7 @@
                         <div class="fbox__icone abs">
                             <i class="fas fa-store"></i>
                         </div>
-                        <h3>
+                        <h3 class="fbox__texte">
                             Dégustez au restaurant
                         </h3>
                     </a>
@@ -137,9 +137,9 @@
                                 <p class="rbox__lieu">
                                     Ménilmontant
                                 </p>
-                                <div class="rbox__coeur abs">
-                                    <i class="far fa-heart flex abs rbox__coeur--empty"></i>
-                                    <i class="fas fa-heart flex abs rbox__coeur--full"></i>
+                                <div class="coeur coeuri abs">
+                                    <i class="far fa-heart flex abs coeur--empty"></i>
+                                    <i class="fas fa-heart flex abs coeur--full"></i>
                                 </div>
                             </div>
                         </a>
@@ -160,9 +160,9 @@
                                 <p class="rbox__lieu">
                                     Charonne
                                 </p>
-                                <div class="rbox__coeur abs">
-                                    <i class="far fa-heart flex abs rbox__coeur--empty"></i>
-                                    <i class="fas fa-heart flex abs rbox__coeur--full"></i>
+                                <div class="coeur coeuri abs">
+                                    <i class="far fa-heart flex abs coeur--empty"></i>
+                                    <i class="fas fa-heart flex abs coeur--full"></i>
                                 </div>
                             </div>
                         </a>
@@ -180,9 +180,9 @@
                                 <p class="rbox__lieu">
                                     Cité Rouge
                                 </p>
-                                <div class="rbox__coeur abs">
-                                    <i class="far fa-heart flex abs rbox__coeur--empty"></i>
-                                    <i class="fas fa-heart flex abs rbox__coeur--full"></i>
+                                <div class="coeur coeuri abs">
+                                    <i class="far fa-heart flex abs coeur--empty"></i>
+                                    <i class="fas fa-heart flex abs coeur--full"></i>
                                 </div>
                             </div>
                         </a>
@@ -200,9 +200,9 @@
                                 <p class="rbox__lieu">
                                     Folie-Méricourt
                                 </p>
-                                <div class="rbox__coeur abs">
-                                    <i class="far fa-heart flex abs rbox__coeur--empty"></i>
-                                    <i class="fas fa-heart flex abs rbox__coeur--full"></i>
+                                <div class="coeur coeuri abs">
+                                    <i class="far fa-heart flex abs coeur--empty"></i>
+                                    <i class="fas fa-heart flex abs coeur--full"></i>
                                 </div>
                             </div>
                         </a>
@@ -250,7 +250,7 @@
                     </li>
     
                     <li>
-                        <a class="lien flex alignc clight" href="">
+                        <a class="lien flex alignc clight" href="mailto:contact@ohmyfood.fr">
                             <p>
                                 Contacts
                             </p>
