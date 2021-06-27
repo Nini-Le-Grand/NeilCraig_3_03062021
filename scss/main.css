@@ -346,8 +346,8 @@
 
 .ballon1 {
   display: flex;
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
   background-color: #9356DC;
   border-radius: 9999px;
   -webkit-animation: bounce 2200ms ease-in-out infinite;
@@ -416,9 +416,17 @@
   transition-duration: 1s;
 }
 
+.plat__textbox {
+  transition: all 1s;
+}
+
 .plat:hover .plat__prix {
   transform: translateX(-60px);
   transition-duration: 1s;
+}
+
+.plat__prix {
+  transition: all 1s;
 }
 
 .plat:hover .plat__selection {
@@ -426,8 +434,13 @@
   transition-duration: 1s;
 }
 
+.plat__selection {
+  transition: all 1s;
+}
+
 .checkbox {
   transform: scale(0.5) rotate(280deg);
+  transition: all 0.7s;
 }
 
 .plat:hover .checkbox {
